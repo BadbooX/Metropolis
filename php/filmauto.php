@@ -5,6 +5,10 @@ $sql = 'SELECT * FROM films WHERE id_films='.$_GET['id_films'].'';
 $check = $bdd->prepare($sql);
 $check->execute();
 $row = $check->fetch();
+$sql2 = 'SELECT * FROM jouer, films, acteurs WHERE jouer.id_acteurs=acteurs.id_acteurs AND jouer.id_films=id_films AND films.id_films ='.$_GET['id_films'].'';
+$check = $bdd->prepare($sql2);
+$check->execute();
+$row = $check->fetch();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +57,7 @@ $row = $check->fetch();
             <div class='midright'>
                 <h2><span class='coloredweb'>Act</span>eurs</h2>
                 <ul>
-                    <li>??</li>
+                    <li><?php echo $row['acteurs_films'];?></li>
                     
                 </ul>
             </div>
