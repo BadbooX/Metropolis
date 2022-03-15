@@ -1,0 +1,590 @@
+*{  
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black !important;
+    
+}
+.coloredweb{
+    color:#0D6EFD;
+}
+#connect{
+    position: absolute;
+    right: 3%;
+    top: 25%;
+}
+
+#disconnect{
+    position: absolute;
+    left: 3%;
+    top:25%;
+}
+nav{
+    height: 70px;
+    
+}
+.logogonav{
+    margin: auto;
+}
+/* premiere section */
+.corpus{
+    background:  no-repeat url("../img/image_logonetflix.jpg"),  no-repeat url("../img/logostart.png");
+    height: 100vh;
+    width: 100%;
+}
+/* Logo métroplis */
+.logostart{
+    text-align: center;
+}
+/* section tv*/
+.cinechezvous{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+/* texte tv */
+.boxtalking{
+    text-align: center;
+    width: 30%;
+}
+/* div tv */
+.boximg{
+    width: 50%;
+}
+/* img tv*/
+.tv{
+    height:350px;
+    margin-left: 40%;
+}
+/* fin de la section tv */
+.parallax{
+  background: no-repeat top fixed url("../img/metroparallax.jpeg") ;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Section cut métropolis */
+.lemetropolis{
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+    
+    margin-bottom: 40px;
+}
+/* img metro */
+.mtr{
+    height:350px;
+    
+}
+.secboxtalking{
+    text-align: center;
+    width: 30%;
+}
+.secboximg{
+    width: 50%;
+}
+/* fin de la section cut */
+
+/* Footer*/
+.basdepage{
+    text-align: center;
+}
+.basdepage a{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+.basdepage a:hover {
+    color: #0D6EFD;
+    font-weight: bold;
+    transition: all 0.2s;
+
+}
+
+.footleft ul{
+    list-style-type: none;
+}
+.footleft h2{
+    margin-bottom: 30px;
+}
+.footcenter h2{
+    margin-bottom: 30px;
+}
+.footcenter ul li{
+    
+    list-style-type: none;
+}
+.copyright{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: gray;
+    justify-content: end;
+}
+.foots{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 300px;
+    color:white;
+}
+.footright ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+    color: white;
+    font-size: 4em;
+}
+.footright li {
+    margin-right: 40px;
+    color: white;
+    
+}
+footer{
+    height: 100%;
+    background-color: #000;
+}
+/* slider 3D */
+.section_coverflow{
+    color: white;
+    
+}
+[type=radio] {
+    display:none;
+}
+#slider{
+    
+    margin-top: 80px;
+    margin-bottom: 120px;
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label{
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor:pointer;
+    transition: transform 0.4s ease;
+}
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3{
+    box-shadow: 0 1px 4px 0 rgba(1,0,0,.37);
+    transform: translate3d(-60%,0,-300px);
+}
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-30%,0,-150px);
+}
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5{
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0%,0,0px);
+}
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(30%,0,-150px);
+}
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(60%,0,-300px);
+}
+/* fin slider 3D*/
+
+
+/*  caroussel */
+
+.section_film{
+    margin-top: 70px;
+}
+.caroussel-container{
+    
+    width:1280px;
+    margin: 50px auto;
+    min-height:200px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.caroussel-container .caroussel-inner{
+    overflow: hidden;
+}
+.caroussel-container .track{
+    display:flex;
+    transition: transform 0.5s;
+}
+.caroussel-container .card-container{
+    
+    width:259px;
+    flex-shrink: 0;
+    height:250px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+
+.caroussel-container .card-container .card{
+    min-width: 200px;
+    height:100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 1px;
+    display:flex;
+    justify-content: column;
+
+}
+.nev button{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+}
+.nev .prev{
+    left: -30px;
+    color:#0D6EFD;
+}
+.nev .next{
+    right:-30px;
+    color:#0D6EFD;
+}
+.card > * {
+    flex:1;
+
+}
+
+.card .imgauto{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.card .info{
+    flex-basis: 40px;
+    flex-grow: 0;
+    padding:10px;
+    box-sizing: border-box;
+    background: #fff;
+    color:black;
+}
+/* Moovies */
+.container_film{
+    color:#fff;
+    font-size: 2em;
+}
+
+/* fin moovies */
+/* fin caroussel */
+
+
+
+
+/* page de connexion/inscription */
+.formConnex{
+    text-align: center;
+    line-height: 20px;
+    
+}
+.titleConnex{
+    margin-top: 10%;
+    color: #fff;
+    text-align: center;
+}
+.inputs{
+    width: 85%;
+    font-size: 1.5em;
+    margin-top: 10%;
+    border-radius: 10px;
+    
+}
+.buttonForm{
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+    width: 60%;
+    font-size: 1.6em;
+    margin-top: 10%;
+    
+}
+.linksConnex{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+.containerConnex{
+    
+    width: 60vh;
+    height:60vh;
+    
+    margin-top: 15vh;
+    border-radius: 10px;
+}
+.section_formConnex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh;
+    height: 500px;
+    margin: auto;
+    
+}
+
+/* Fin de la page de connexion/inscription */
+
+/* Page du film */
+.logo_img{
+    margin-top:70px;
+}
+.logo_film{
+    text-align: center;
+    height: 400px;
+    width: 100;
+    overflow: hidden;
+    
+}
+.logo_film > img{
+    height: 350px;
+    width: 900px;
+}
+
+
+.cutmiddle{
+    text-align: center;
+    height: 100%;
+    background-color: #000;
+}
+.bandeAnnonce{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.midleft{
+    margin-bottom: 20px;
+}
+.midleft ul{
+    list-style-type: none;
+    max-width: 450px;
+}
+.midleft ul h2{
+    margin-bottom: 30px;
+}
+.midcenter h2{
+    margin-bottom: 30px;
+}
+.midcenter ul li{
+    
+    list-style-type: none;
+}
+
+.mid_container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: flex-start;
+    margin-top: 60px;
+    height: 300px;
+    color:white;
+}
+.midright ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+    color: white;
+    
+}
+.midright li {
+    margin-right: 40px;
+    color: white;
+    
+}
+
+
+
+
+
+/* Fin de la page du film */
+
+@media screen and (max-width: 1100px){
+    .foots{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    footer{
+        margin-top: 300px;
+        margin-left: -5%
+    }
+    .footleft{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        
+        
+    }
+
+    .footcenter{
+        width: 100%;
+        text-align: center;
+      
+    }
+    .footright
+    {
+        width: 100%;
+        
+    }
+    .copyright{
+        margin-top: 200px;
+    }
+    .parallax{
+        display: none;
+    }
+    .cinechezvous{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .boxtalking{
+        
+        margin-top: 80px;
+        min-width: 300px;
+    }
+    .boximg{    
+        display: flex;
+        margin-left: 0%;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+        height: 350px;
+    }
+    .tv{
+        min-width: 370px;
+        margin: auto;
+        
+    }
+    .lemetropolis{
+        margin-right: 20%;
+    }
+    .secboxtalking{
+        margin-top: 150px;
+        min-width: 370px;
+        height: 400px;
+    }
+    .mtr{
+        display: none;
+    }
+    .corpus{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    nav{
+        width:100%;
+    }
+    
+    #connect{
+        position: absolute;
+        right: 5%;
+        top: 25%;
+    }
+    
+    #disconnect{
+        position: absolute;
+        left: 5%;
+        top:25%;
+    }
+    .logostart{
+        margin-left: 0%;
+        min-width: 370px;
+    }
+    .section_coverflow{
+        display: none;
+    }
+    
+    .formConnex{
+        margin-bottom: 100px;
+    }
+   
+    .caroudeux{
+        display: none;
+    }
+    .caroutrois{
+        display: none;
+    }
+    .caroun{
+    min-width: 300px;
+    }
+    .mid_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 300px;
+        margin-bottom: 400px;
+        text-align: center;
+    }
+    .midleft ul{
+        width: 300px;
+        min-width: 200px;
+    }
+    
+    .logo_film > img {
+        min-width: 370px;
+    }
+    .bandeAnnonce{
+        height: 260px;
+        min-width: 270px;
+        padding: 20px 50px;
+        margin-bottom: 380px;
+    }
+}
