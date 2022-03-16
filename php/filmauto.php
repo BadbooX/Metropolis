@@ -50,7 +50,8 @@ $check->execute();
             <div class='midcenter'>
                 <h2><span class='coloredweb'>info</span>rmations</h2>
                 <ul>
-                    <li>Parution: ??</li>
+                    <li>Parution: <?php echo $row['datesortie_films']; ?></li>
+                    <li>Durée: <?php echo $row['duree_films']; ?></li>
                     <li>Réalisateur: ??</li>
                 </ul>
             </div>
@@ -77,7 +78,12 @@ $check->execute();
         </div>
     </section>
     <section class="bandeAnnonce">
-        <?php echo $row['bandeannonce_films'];?>
+        <?php
+        
+        $check->execute();
+        $row = $check->fetch();
+        echo $row['bandeannonce_films'];
+        ?>
     </section>
 
     <?php 
