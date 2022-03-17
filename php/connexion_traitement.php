@@ -2,7 +2,7 @@
     session_start();
     require_once 'config.php';
     
-    
+    $connected = FALSE;
     if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['username'])){
 
         $identifiant = htmlspecialchars($_POST['username']);
@@ -40,7 +40,9 @@
                     if(belongs_to_password($mdp, $mdp_hashed, $data['mdp'])){
 
                         $_SESSION['user'] = $data['identifiant'];
+                        $_SESSION['connecte'] = TRUE;
                         header('Location:accueil.php');
+                        
                     
                     }else header('Location:connexion.php?login_err=password');
                 }else header('Location:connexion.php?login_err=email');

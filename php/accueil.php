@@ -3,7 +3,9 @@
     session_start();
     $requete = $bdd->prepare('SELECT * FROM films WHERE id_films');
     $requete->execute();
-
+    if ($_SESSION['connecte'] == FALSE){
+        header('location:index.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
