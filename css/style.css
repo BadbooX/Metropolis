@@ -294,9 +294,11 @@ footer{
     flex:1;
 
 }
+.card img{
+    height: 80%;
+}
 
 .card .imgauto{
-   
     display: flex;
     justify-content: center;
     align-items: center;

@@ -9,6 +9,10 @@ $sql2 = 'SELECT * FROM jouer, films, acteurs WHERE jouer.id_acteurs=acteurs.id_a
 $check = $bdd->prepare($sql2);
 $check->execute();
 
+ $sql3 = 'SELECT * FROM realiser, films, realisateurs WHERE realiser.id_realisateurs=realisateurs.id_realisateurs AND realiser.id_films=films.id_films AND films.id_films  ='.$_GET['id_films'].'';
+ $check2 = $bdd->prepare($sql3);
+$check2->execute();
+$row2 = $check2->fetch();
 
 ?>
 <!DOCTYPE html>
@@ -32,7 +36,6 @@ $check->execute();
             <li  id="disconnect" class="nav-item"><a href="deconnex.php"><button type="button" class="btn btn-primary">Déconnexion</button></a></li>
         </ul>
     </nav>
-
     <div class="logo_film">
         <img class="logo_img"src="../img/<?php echo $row['affiche_films'];?>">
     </div>
@@ -52,7 +55,7 @@ $check->execute();
                 <ul>
                     <li>Parution: <?php echo $row['datesortie_films']; ?></li>
                     <li>Durée: <?php echo $row['duree_films']; ?></li>
-                    <li>Réalisateur: ??</li>
+                    <li>Réalisateur: <?php echo $row2['prenom_realisateurs'].' '. $row2['nom_realisateurs']; ?></li>
                 </ul>
             </div>
             

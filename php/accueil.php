@@ -73,17 +73,23 @@
                     <div class='caroussel-container'>
                         <div class='caroussel-inner'>
                             <div class='track'>
-                                <div class='card-container'>
+                                
                                 <?php
                                 while($row=$requete->fetch())
+                                
                                 {
-                                    ?>
-                                    <div class='card'>
-                                        <a href="filmauto.php?id_films=<?php echo($row['id_films'])?>"><img src="../img/<?php echo $row['affiche_films'];?>"></a>
+                                ?>
+                                    <div class='card-container'>
+                                        <div class='card'>
+                                            <a href="filmauto.php?id_films=<?php echo $row['id_films'];?>">
+                                            <img src="../img/<?php echo $row['affiche_films'];?>">
+                                            </a>
+                                        </div>
                                     </div><?php
                                 }
                                 ?>
-                                </div>
+                                
+                                
                             </div>
                         </div>
                         <div class='nev'>
@@ -91,7 +97,7 @@
                             <button class='next'><i class='fa-solid fa-circle-right'></i></button>
 
                         </div>
-                    </div>"
+                    </div>
                 
             </div>
            
