@@ -82,7 +82,7 @@
                                     <div class='card-container'>
                                         <div class='card'>
                                             <a href="filmauto.php?id_films=<?php echo $row['id_films'];?>">
-                                            <img src="../img/<?php echo $row['affiche_films'];?>">
+                                            <img src="../img_caroussel/<?php echo $row['affiche_caroussel'];?>">
                                             </a>
                                         </div>
                                     </div><?php
@@ -98,6 +98,8 @@
 
                         </div>
                     </div>
+
+                   
                 
             </div>
            
@@ -112,7 +114,7 @@
 
     <script src="../js/bootstrap.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/flashpara.js"></script>
+    <script src="../js/carousel.js"></script>
     <script src="https://kit.fontawesome.com/b6728b60f5.js" crossorigin="anonymous"></script>
 </body>
 

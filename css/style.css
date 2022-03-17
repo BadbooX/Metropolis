@@ -296,6 +296,7 @@ footer{
 }
 .card img{
     height: 80%;
+    width: 100%;
 }
 
 .card .imgauto{
