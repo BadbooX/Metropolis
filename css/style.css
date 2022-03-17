@@ -10,6 +10,18 @@ body{
 .coloredweb{
     color:#0D6EFD;
 }
+.searchsubmit{
+    color:white;
+    background-color: #0D6EFD;
+    border-radius: 2px;
+    width: 30px;
+    height: 29px;
+}
+.bar{
+    position: absolute;
+    right:3%;
+    top:30%;
+}
 #connect{
     position: absolute;
     right: 3%;
@@ -26,7 +38,10 @@ nav{
     
 }
 .logogonav{
-    margin: auto;
+    margin:auto;
+}
+#btnsearch{
+    height: 38px;
 }
 /* premiere section */
 .corpus{

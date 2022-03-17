@@ -27,7 +27,7 @@
         <a class="logogonav" href="index.php"><img src="../img/logo_m.png" alt=""></a>
         <ul class="navbar-nav mr-auto">
             <li  id="disconnect" class="nav-item"><a href="deconnex.php"><button type="button" class="btn btn-primary">Déconnexion</button></a></li>
-            
+            <li class="bar"><input class="searchbar" type="text" placeholder="Chercher un film.."><button class="searchsubmit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></li>
         </ul>
 
     </nav>
