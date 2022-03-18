@@ -9,10 +9,11 @@ $sql2 = 'SELECT * FROM jouer, films, acteurs WHERE jouer.id_acteurs=acteurs.id_a
 $check = $bdd->prepare($sql2);
 $check->execute();
 
- $sql3 = 'SELECT * FROM realiser, films, realisateurs WHERE realiser.id_realisateurs=realisateurs.id_realisateurs AND realiser.id_films=films.id_films AND films.id_films  ='.$_GET['id_films'].'';
- $check2 = $bdd->prepare($sql3);
+$sql3 = 'SELECT * FROM realiser, films, realisateurs WHERE realiser.id_realisateurs=realisateurs.id_realisateurs AND realiser.id_films=films.id_films AND films.id_films  ='.$_GET['id_films'].'';
+$check2 = $bdd->prepare($sql3);
 $check2->execute();
 $row2 = $check2->fetch();
+/* $sql4 = 'SELECT * FROM appartenir, categorie, films WHERE appartenir. */
 
 ?>
 <!DOCTYPE html>
